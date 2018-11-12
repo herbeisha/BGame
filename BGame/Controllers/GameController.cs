@@ -19,5 +19,10 @@ namespace BGame.Controllers
         {
             return View(GameRepository.GameItems.Where(x => x.GameItemId == Id).FirstOrDefault());
         }
+        
+        public ViewResult GameItemList()
+        {
+            return View(GameRepository.GameItems);
+        }
     }
 }
