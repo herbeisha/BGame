@@ -10,7 +10,7 @@ namespace BGame.Models
         public string Name { get; set; }
         public int GameItemId { get; set; }
         public string Description { get; set; }
-        public DateTime GameTime { get; set; }
+        //public DateTime GameTime { get; set; }
         public float Price { get; set; }
         public int Players { get; set; }
         public int UserId { get; set; }
