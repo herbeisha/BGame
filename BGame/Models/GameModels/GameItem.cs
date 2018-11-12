@@ -7,13 +7,13 @@ namespace BGame.Models
 {
     public class GameItem
     {
-        public string Name;
-        public int GameItemId;
-        public string Description;
-        public DateTime GameTime;
-        public float Price;
-        public int Players;
-        public int UserId;
-        public int Age;
+        public string Name { get; set; }
+        public int GameItemId { get; set; }
+        public string Description { get; set; }
+        public DateTime GameTime { get; set; }
+        public float Price { get; set; }
+        public int Players { get; set; }
+        public int UserId { get; set; }
+        public int Age { get; set; }
     }
 }
