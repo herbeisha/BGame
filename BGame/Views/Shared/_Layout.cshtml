@@ -1,29 +1,40 @@
 ﻿<!DOCTYPE html>
-<html style=" height: 100%;">
+<html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <link href="@Url.Content("~/css/stylesheet.css")" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            margin: 0px;
+            min-height: 100%;
+            position: relative;
+            padding-bottom: 50px;
+        }
+        footer {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 50px;
+        }
+    </style>
     <title>Home Page</title>
 </head>
-<body style="margin: 0px; min-height:100%; position:relative; padding-bottom:50px;">
+<body ">
     <div class="navigation">
         <table>
             <tr>
-                <td><img src="~/images/logo-site.png"></td>
-                <td class="navbutton"><a asp-action="">Home</a></td>
-                <td class="navbutton"><a asp-action="Item">Games</a></td>
-                <td class="navbutton"><a asp-action="AddItem">Add Game</a></td>
-                <td class="navbutton"><a asp-action="User">Profile</a></td>
-                <td class="navbutton"><a asp-action="Data">About us</a></td>
+                <td class="navbutton"><a asp-action="Index">Index</a></td>
+                <td class="navbutton"><a asp-action="BuyPage">Store</a></td>
+                <td class="navbutton"><a asp-action="SellPage">Sell</a></td>
+                <td class="navbutton"><a asp-action="Login">Sign In</a></td>
+                <td class="navbutton"><a asp-action="Register">Sign Up</a></td>
             </tr>
         </table>
     </div>
     @RenderBody()
-
-    <footer style="position: absolute; left: 0 ; right: 0; bottom: 0; height:50px;">
-        <p>&copy; 2018 - GameShop</p>
+    <footer>
+        <p>&copy; 2018 - BGame </p>
     </footer>
-
-
 </body>
 </html>
