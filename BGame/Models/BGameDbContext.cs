@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using BGame.Models.UserModels;
 namespace BGame.Models
 {
     public class BGameDbContext: DbContext
