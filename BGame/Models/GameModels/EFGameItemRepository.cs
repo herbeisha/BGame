@@ -8,7 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace BGame.Models
 {
-    public class EFGameItemRepository: IGameItem
+    public class EFGameItemRepository : IGameItem
     {
         private BGameDbContext context;
         public EFGameItemRepository(BGameDbContext context)
