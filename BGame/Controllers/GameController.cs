@@ -14,7 +14,7 @@ namespace BGame.Controllers
         {
             this.GameRepository = GameRepository;
         }
-
+        
         public ViewResult GameDetail(int Id)
         {
             return View(GameRepository.GameItems.Where(x => x.GameItemId == Id).FirstOrDefault());
