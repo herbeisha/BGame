@@ -15,5 +15,6 @@ namespace BGame.Models
         public int Players { get; set; }
         public int UserId { get; set; }
         public int Age { get; set; }
+        public string Image { get; set; }
     }
 }
