@@ -7,7 +7,7 @@ namespace BGame.Models.UserModels
 {
     public interface IUserInterface
     {
-        IQueryable<User> Games { get; }
+        IQueryable<User> Users { get; }
         void Add(User obj);
 
     }
