@@ -1,7 +1,29 @@
-﻿
-@{
-    ViewData["Title"] = "_Layout";
-}
+﻿<!DOCTYPE html>
+<html style=" height: 100%;">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/css/stylesheet.css")" rel="stylesheet" type="text/css" />
+    <title>Home Page</title>
+</head>
+<body style="margin: 0px; min-height:100%; position:relative; padding-bottom:50px;">
+    <div class="navigation">
+        <table>
+            <tr>
+                <td><img src="~/images/logo-site.png"></td>
+                <td class="navbutton"><a asp-action="">Home</a></td>
+                <td class="navbutton"><a asp-action="Item">Games</a></td>
+                <td class="navbutton"><a asp-action="AddItem">Add Game</a></td>
+                <td class="navbutton"><a asp-action="User">Profile</a></td>
+                <td class="navbutton"><a asp-action="Data">About us</a></td>
+            </tr>
+        </table>
+    </div>
+    @RenderBody()
 
-<h2>_Layout</h2>
+    <footer style="position: absolute; left: 0 ; right: 0; bottom: 0; height:50px;">
+        <p>&copy; 2018 - GameShop</p>
+    </footer>
 
+
+</body>
+</html>
