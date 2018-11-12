@@ -16,4 +16,12 @@ namespace BGame.Models
         public DbSet<GameItem> GameItems { get; set; }
         public DbSet<User> Users { get; set; }
     }
+    public class ApplicationDbContextFactory
+          : IDesignTimeDbContextFactory<BGameDbContext>
+    {
+
+        public BGameDbContext CreateDbContext(string[] args) =>
+            Program.BuildWebHost(args).Services
+                .GetRequiredService<BGameDbContext>();
+    }
 }
