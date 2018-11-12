@@ -5,10 +5,8 @@ using System.Threading.Tasks;
 
 namespace BGame.Models
 {
-    public class GameItem
+    public interface IGameItem
     {
-        public string Name;
-        public int GameItemId;
-
+        IQueryable<GameItem> GameItems { get; }
     }
 }
