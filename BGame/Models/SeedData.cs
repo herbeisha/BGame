@@ -11,7 +11,7 @@ namespace BGame.Models
     {
         public static void EnsurePopulated(IApplicationBuilder app)
         {
-            BGameDbContext context = app.ApplicationServices.GetRequiredService<GameDbContext>();
+            BGameDbContext context = app.ApplicationServices.GetRequiredService<BGameDbContext>();
             context.Database.Migrate();
             if (!context.GameItems.Any())
             {
