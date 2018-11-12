@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using BGame.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-
+using BGame.Models.UserModels;
 namespace BGame
 {
     public class Startup
@@ -25,6 +25,7 @@ namespace BGame
                 Configuration["ConnectionStrings:DefaultConnection"]));
             services.AddMvc();
             services.AddTransient<IGameItem, EFGameItemRepository>();
+            services.AddTransient<IUserInterface, EFUserRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
